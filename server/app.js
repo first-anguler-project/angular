@@ -1,5 +1,6 @@
 const express= require("express")
 const mongoose=require("mongoose")
+<<<<<<< HEAD
 const badyparser=require("body-parser")
 const cors=require("cors")
 const product=require("./controllers/product")
@@ -21,6 +22,15 @@ app.post('/enrollment',function(req,res){ console.log(req.body);
     }); 
 
 
+=======
+const cors=require("cors")
+const fs = require("fs")
+// const fileUpload = require('express-fileupload')
+const product=require("./controllers/product")
+const route = express.Router();
+const app=express();
+// app.use(fileUpload());
+>>>>>>> 9408a28fae4ae655af2af7a1e64ae2dcb08b68d9
 
 mongoose.connect("mongodb://127.0.0.1:27017/MagicShop",(err,res)=>{
     if(err){
@@ -33,11 +43,19 @@ mongoose.connect("mongodb://127.0.0.1:27017/MagicShop",(err,res)=>{
 app.use("/get",product)
 app.use(express.static("public"));   
 
+<<<<<<< HEAD
  app.use(function(req,resp,next){
      resp.setHeader("Access-Control-Allow-Origin","*");
      resp.setHeader("Access-Control-Allow-Methods","GET,POST,PUT,DELETE");
     next()
    });
+=======
+app.use(function(req,resp,next){
+    resp.setHeader("Access-Control-Allow-Origin","*");
+    resp.setHeader("Access-Control-Allow-Methods","GET,POST,PUT,DELETE");
+    next()
+  });
+>>>>>>> 9408a28fae4ae655af2af7a1e64ae2dcb08b68d9
 
   var files_arr=fs.readdirSync(__dirname+"/models")
   files_arr.forEach(function(file){
@@ -45,6 +63,11 @@ app.use(express.static("public"));
   });
 
 
+<<<<<<< HEAD
 app.listen(PORT,function(){
     console.log("server is listenning ...."+PORT)
+=======
+app.listen(4200,function(){
+    console.log("server is listenning ....")
+>>>>>>> 9408a28fae4ae655af2af7a1e64ae2dcb08b68d9
 })

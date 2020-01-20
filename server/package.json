@@ -6,7 +6,10 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+<<<<<<< HEAD
     "cross": "^1.0.0",
+=======
+>>>>>>> 9408a28fae4ae655af2af7a1e64ae2dcb08b68d9
     "express": "^4.17.1",
     "init": "^0.1.2",
     "mongoose": "^5.8.7"
