@@ -7,12 +7,17 @@ import { ProductsComponent } from './products/products.component';
 import { BagsComponent } from './bags/bags.component';
 import{HttpClientModule} from '@angular/common/http';
 import {AllProductService}from '../services/all-product.service';
+import { BagsCategoryComponent } from './bags-category/bags-category.component';
+import { GetBagsProductsService } from "src/services/get-bags-products.service";
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
-    BagsComponent
+    BagsComponent,
+    BagsCategoryComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +26,8 @@ import {AllProductService}from '../services/all-product.service';
     
   ],
   providers: [
-    AllProductService
+    AllProductService,
+    GetBagsProductsService
   ],
   bootstrap: [AppComponent]
 })
