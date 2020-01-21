@@ -20,7 +20,7 @@ var parseUrlencoded= bodyParser.urlencoded({extended: true})
 //         });
 //         });
 
-router.get("/getproduct",(req,res)=>{
+router.get("/product",(req,res)=>{
     mongoose.model("product").find((error,result)=>{
     if(error){
                 console.log(error)

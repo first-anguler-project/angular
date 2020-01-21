@@ -6,7 +6,7 @@ import { product } from 'src/app/interfaces/productdetails';
   providedIn: 'root'
 })
 export class AllProductService {
-public url="http://localhost:4200/get/getproduct"
+public url="http://localhost:4200/get/product"
   constructor(private http:HttpClient) { 
    
   }

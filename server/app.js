@@ -2,6 +2,7 @@ const express= require("express")
 const mongoose=require("mongoose")
 const cors=require("cors")
 const fs = require("fs")
+const multer=require("multer")
 // const fileUpload = require('express-fileupload')
 const product=require("./controllers/product")
 const route = express.Router();
@@ -31,6 +32,6 @@ app.use(function(req,resp,next){
   });
 
 
-app.listen(4200,function(){
+app.listen(4000,function(){
     console.log("server is listenning ....")
 })
