@@ -1,12 +1,33 @@
 const express= require("express")
 const mongoose=require("mongoose")
+const badyparser=require("body-parser")
 const cors=require("cors")
+const product=require("./controllers/product")
+const user =require("./controllers/user")
+const app=express();
+
+
+// app.use(badyparser.json());
+// app.use(cors());
+
+
+app.get('/',function(req,res){
+
+res.send("heloo");
+});
+
+app.use("/user",user)
+  
+
+
+
+
 const fs = require("fs")
 const multer=require("multer")
 // const fileUpload = require('express-fileupload')
-const product=require("./controllers/product")
+
 const route = express.Router();
-const app=express();
+//const app=express();
 // app.use(fileUpload());
 
 mongoose.connect("mongodb://127.0.0.1:27017/MagicShop",(err,res)=>{
