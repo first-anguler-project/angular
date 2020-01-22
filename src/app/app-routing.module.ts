@@ -25,10 +25,13 @@ const routes: Routes = [
   {path:"dress",component:DressComponent},
   {path:"bag-details",component:BagsComponent},
   {path:"login",component:TdfformComponent},
-
+  {path:"details" ,component:BagsComponent},
+  {path:"Bags" ,component:BagsCategoryComponent},
   {path:"**",component:PageNotFoundComponent}
   
-];
+
+]
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
