@@ -1,6 +1,37 @@
-.bags{
-    margin-left: 30px;
- }
+.cardstyle{
+
+    border: 1px outset #ECE1D8;
+    margin-bottom: 10px;
+}
  img{
-     width: 100px;
+     width: 200px;
+ }
+ .fontstyle{
+       font-family: Times New Roman;
+       font-size: 25px;
+       font-weight: bold;
+ }
+ .fontstyle1{
+    
+     font-family: sofia;
+     font-size: 15px;
+     font-weight: bold;
+     color: #1E201E;
+     background-color: #ECE1D8;
+     margin-left:0;
+     text-align: center;
+     cursor: pointer;
+     
+ }
+ .zoom1:hover{
+     font-size:20px;
+     color:  #363A3E;
+     background-color: #C3AA88;
+     font-family: sofia;
+ }
+ .sameline{
+     float: left;
+     margin-top: 10px;
+     margin-left: 5px;
+     font-size: 25px;
  }
