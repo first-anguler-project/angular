@@ -17,7 +17,7 @@ res.send("heloo");
 });
 
 app.use("/user",user)
-  
+app.use("/get",product) 
 
 
 
@@ -25,10 +25,6 @@ app.use("/user",user)
 const fs = require("fs")
 const multer=require("multer")
 // const fileUpload = require('express-fileupload')
-
-const route = express.Router();
-//const app=express();
-// app.use(fileUpload());
 
 mongoose.connect("mongodb://127.0.0.1:27017/MagicShop",(err,res)=>{
     if(err){
@@ -38,7 +34,7 @@ mongoose.connect("mongodb://127.0.0.1:27017/MagicShop",(err,res)=>{
 });
 
 
-app.use("/get",product)
+
 app.use(express.static("public"));   
 
 app.use(function(req,resp,next){

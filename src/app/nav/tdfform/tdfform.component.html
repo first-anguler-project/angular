@@ -1,7 +1,7 @@
 
 
 <div class=“container-fluid”> 
-       <form #userForm="ngForm" novalidate (ngSubmit)="onSubmit()">
+       <form #userForm="ngForm"novalidate (ngSubmit)="onSubmit()">
               {{userForm.value |json}}
     <div class="form-group">  
            <label>Name :</label> 
@@ -22,9 +22,9 @@
                      
                      <input type="submit" [disabled]="userForm.form.invalid" class="btn btn-primary" value="log in">
 
-                     <div class="form-check mb-3">   
+                     <!-- <div class="form-check mb-3">   
                           <input type="checkbox" class="form-check-input" [(ngModel)]="userModel.checktxt" name="checkname">   
-                           <label class="form-check-label">Remember me</label> </div> 
+                           <label class="form-check-label">Remember me</label> </div>  -->
                      </form>
                    
 </div> 

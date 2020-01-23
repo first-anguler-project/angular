@@ -16,11 +16,12 @@
             <p>type</p>
             <p>color</p>
             <p>price</p>
+            <input type="text" name="name" #name>
         </div>
         <div class="col-4"id="btn">
-            <input type="submit" value=" Add To Wishlist" class="btn btn-light inputstyle">
+            <input type="submit" value=" Add To Wishlist" class="btn btn-light inputstyle" (click)="Wishlist(name.value)">
             <br><br>
-            <input type="submit" value="Add To Package" class="btn btn-light inputstyle">
+            <input type="submit" value="Add To Package" class="btn btn-light inputstyle" (click)="Package()">
             </div>
         </div>
     

@@ -13,5 +13,9 @@ public bags;
   ngOnInit() {
     this.bags=this.getproduct.getproduct();
   }
+  Wishlist(get){
+    document.getElementById("mywishlist") 
+   
+  }
   
 }

@@ -9,9 +9,34 @@ var parseUrlencoded= bodyParser.urlencoded({extended: true})
 
 
 
-router.post('/sign',parseUrlencoded,function(req,res){
+router.post('/signup',bodyParser.json(),function(req,res){
      console.log(req.body);
-    res.status(200).send({"data":"Recieved successfully"}); 
+     const usermodel=mongoose.model(User)
+     const User=new usermodel()
+     User.name=req.body.name
+     User.email=req.body.email
+     User.password=req.body.password
+     
+     User.save((result,error)=>{
+       if(error){
+         console.log(error)
+       }
+       console.log("saved!")
+     })
+   
    }); 
+
+
+   router.post("/login",(req,res)=>{
+     mongoose.model(user).findOne({email:req.body.email},
+     (error,result)=>{
+if (error){
+  console.log(error)
+}
+if(result){
+  
+}
+     } )
+   })
 
    module.exports=router
