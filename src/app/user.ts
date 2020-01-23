@@ -4,7 +4,7 @@ export class User {
         public lastname:String,
         public password:String,
         public email:String,
-        public phone:Number,
+       // public phone:number,
         public check:boolean
     ){}
 }

@@ -27,6 +27,7 @@ const routes: Routes = [
   {path:"login",component:TdfformComponent},
   {path:"details" ,component:BagsComponent},
   {path:"Bags" ,component:BagsCategoryComponent},
+  {path:"signup" ,component:TdfsignupComponent},
   {path:"**",component:PageNotFoundComponent}
   
 

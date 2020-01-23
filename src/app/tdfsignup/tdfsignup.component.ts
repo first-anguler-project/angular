@@ -10,18 +10,18 @@ import { EnrollmentService } from 'src/app/enrollment.service';
 })
 export class TdfsignupComponent implements OnInit {
   public _EnrollService: any;
-  ngOnInit(): void {
-    throw new Error("Method not implemented.");
+  ngOnInit() {
+   
   }
 
  
 
   constructor(private enrollment:EnrollmentService) { }
-userModel=new User("sh","is","","abnabil@iti.gov.eg",1234566,true);
+userModel=new User("sh","is","","abnabil@iti.gov.eg",true);
 
 
 onSubmit(){
-  this._EnrollService.enroll(this.userModel).
+  this.enrollment.enroll(this.userModel).
    subscribe( response => console.log('Success!', response), error => console.log('error',error) ) } 
  
  

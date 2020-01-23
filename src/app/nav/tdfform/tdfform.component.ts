@@ -8,17 +8,17 @@ import { EnrollmentService } from 'src/app/enrollment.service';
   styleUrls: ['./tdfform.component.css']
 })
 export class TdfformComponent implements OnInit {
-  ngOnInit(): void {
-    // throw new Error("Method not implemented.");
+  ngOnInit() {
+   
   }
   _EnrollService: any;
 
   constructor(private enrollment:EnrollmentService) { }
-userModel=new User('',"","",'1212',1212,true);
+userModel=new User('',"","",'1212',true);
 
 
 onSubmit(){
-  this._EnrollService.enroll(this.userModel).
+  this.enrollment.enroll(this.userModel).
    subscribe( response => console.log('Success!', response), error => console.log('error',error) ) } 
  
  

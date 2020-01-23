@@ -18,4 +18,4 @@ const user=new schema({
     }
 
 })
-module.exports=mongoose.Model("user",user)
+module.exports=mongoose.model("user",user)
