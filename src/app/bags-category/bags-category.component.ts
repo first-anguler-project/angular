@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GetBagsProductsService } from "src/services/get-bags-products.service";
 
 @Component({
   selector: 'app-bags-category',
@@ -6,16 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bags-category.component.css']
 })
 export class BagsCategoryComponent implements OnInit {
-/*  public images=[
-    {"id":1, "bag1_url":"assets\images\bag1.jpg"},
-    {"id":2,"bag2_url":"assets\images\bag2.jpg"},
-    {"id":3,"bag4_url":"assets\images\bag4.jpg"},
-    {"id":4,"bag3_url":"assets\images\bag3.jpg"},
-    {"id":5,"bag5_url":"assets\images\bag5.jpg"}
-  ]*/
+
+
+  
   constructor() { }
 
+  
+
+
+ 
+
   ngOnInit() {
+   
   }
 
 }

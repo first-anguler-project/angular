@@ -7,11 +7,11 @@ import { AllProductService } from 'src/services/all-product.service';
   styleUrls: ['./bags.component.css']
 })
 export class BagsComponent implements OnInit {
-public bags;
-  constructor(private getproduct:AllProductService) { }
+
+  constructor() { }
 
   ngOnInit() {
-    this.bags=this.getproduct.getproduct();
+   
   }
   
 }
