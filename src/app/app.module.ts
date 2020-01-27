@@ -20,6 +20,8 @@ import { MakeUpComponent } from './make-up/make-up.component';
 import { DressComponent } from './dress/dress.component';
 import { TdfsignupComponent } from './tdfsignup/tdfsignup.component';
 import { TdfformComponent } from './nav/tdfform/tdfform.component';
+import { DressDetailsComponent } from './dress-details/dress-details.component';
+import { MakeupDetailComponent } from './makeup-detail/makeup-detail.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { TdfformComponent } from './nav/tdfform/tdfform.component';
     MakeUpComponent,
     DressComponent,
     TdfsignupComponent,
-    TdfformComponent
+    TdfformComponent,
+    DressDetailsComponent,
+    MakeupDetailComponent
   ],
   imports: [
     BrowserModule,

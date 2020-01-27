@@ -3,13 +3,16 @@ const mongoose=require("mongoose")
 const badyparser=require("body-parser")
 const cors=require("cors")
 const product=require("./controllers/product")
+const dress=require("./controllers/dress")
+const makeup=require("./controllers/makeup")
+
 const user =require("./controllers/user")
 const app=express();
-
-
-// app.use(badyparser.json());
-// app.use(cors());
-
+const joi =require('@hapi/joi')
+const flash =require("connect-flash")
+app.use(badyparser.json());
+app.use(cors());
+app.use(flash())
 
 app.get('/',function(req,res){
 
@@ -17,7 +20,9 @@ res.send("heloo");
 });
 
 app.use("/user",user)
-  
+app.use("/bag",product) 
+app.use("/dress",dress)
+app.use("/makeup",makeup)
 
 
 
@@ -25,10 +30,6 @@ app.use("/user",user)
 const fs = require("fs")
 const multer=require("multer")
 // const fileUpload = require('express-fileupload')
-
-const route = express.Router();
-//const app=express();
-// app.use(fileUpload());
 
 mongoose.connect("mongodb://127.0.0.1:27017/MagicShop",(err,res)=>{
     if(err){
@@ -38,7 +39,7 @@ mongoose.connect("mongodb://127.0.0.1:27017/MagicShop",(err,res)=>{
 });
 
 
-app.use("/get",product)
+
 app.use(express.static("public"));   
 
 app.use(function(req,resp,next){
@@ -53,6 +54,6 @@ app.use(function(req,resp,next){
   });
 
 
-app.listen(4000,function(){
+app.listen(5000,function(){
     console.log("server is listenning ....")
 })

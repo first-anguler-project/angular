@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from 'src/app/user';
+import { Login} from 'src/app/login';
 import { EnrollmentService } from 'src/app/enrollment.service';
 
 @Component({
@@ -11,14 +11,14 @@ export class TdfformComponent implements OnInit {
   ngOnInit() {
    
   }
-  _EnrollService: any;
+  public EnrollService: any;
 
   constructor(private enrollment:EnrollmentService) { }
-userModel=new User('',"","",'1212',true);
+ userModel=new Login("","");
 
 
 onSubmit(){
-  this.enrollment.enroll(this.userModel).
+  this.enrollment.login(this.userModel).
    subscribe( response => console.log('Success!', response), error => console.log('error',error) ) } 
  
  

@@ -1,15 +1,38 @@
+<nav class="header">
+  <h2>bags</h2>
+</nav>
 <div class="container">
-     <div class="row">
-      <div class="card cardstyle">
-             <div class="sameline"> <i class="far fa-heart"></i> </div>
-              <img src="assets\images\bag1.jpg" >
-             
-        <div class="card-body fontstyle">
-             EGP
-      </div> 
-      
-              <div  class="fontstyle1 zoom1" routerLink="/details">show in detail</div>
-      
+   <div class="row">
+            <div class="col-4 " *ngFor="let bag of bags">
+                  <div class="card cardstyle cardstyle">
+                        <div class="sameline"> <i class="far fa-heart"></i> </div>
+
+                        <div class="card-body fontstyle">
+                              <img src="{{bag.mainimg}}">
+ 
+                              <div (click)="showdetails(bag)" class="center">{{bag.name}}</div>
+
+                        </div>
+                        <h4 class="center">{{bag.price}}</h4>
+
+
+                  </div>
+            </div>
+            <div class="col-4">
+
+
+
+            </div>
+            <div class="col-4"></div>
+
+
       </div>
-     </div>
-    </div>
+      <br><br>
+</div>
+
+<div class="fontstyle1 zoom1" routerLink="/bag-details">show in detail</div>
+
+
+
+
+

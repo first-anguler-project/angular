@@ -17,12 +17,11 @@ export class TdfsignupComponent implements OnInit {
  
 
   constructor(private enrollment:EnrollmentService) { }
-userModel=new User("sh","is","","abnabil@iti.gov.eg",true);
+userModel=new User("","","","","");
 
 
 onSubmit(){
-  this.enrollment.enroll(this.userModel).
-   subscribe( response => console.log('Success!', response), error => console.log('error',error) ) } 
+  this.enrollment.enroll(this.userModel).subscribe( response => console.log('Success!', response), error => console.log('error',error) ) } 
  
  
 

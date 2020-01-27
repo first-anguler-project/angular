@@ -1,0 +1,30 @@
+.container-fluid
+{
+    background-color: rgb(245, 245, 245);
+    height: 450px;
+}
+.header
+{
+    text-align: center;
+    color: #4D4DB9;
+    background-color: rgb(234, 234, 241);
+    height: 50px;
+  
+}
+nav a{
+    text-decoration: none;
+}
+#btn
+{
+padding-top: 40px;
+}
+.inputstyle{
+    border: 2px outset lightgray;
+}
+.divmargin{
+    margin-left: 100px;
+}
+.small{
+    width: 80px;
+    margin-left: 60px;
+}
