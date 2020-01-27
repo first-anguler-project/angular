@@ -3,16 +3,16 @@
            {{userForm.value |json}}
  <div class="form-group">  
         <label>First Name :</label> 
-           <input type="text" #name="ngModel" [class.is-invalid]="name.invalid && name.touched" 
-           required class="form-control" [(ngModel)]="userModel.name" name="firstname">
-           <small [class.d-none]="name.valid || name.untouched" class="text-danger">Name is required</small>
+           <input type="text" #Fname="ngModel" [class.is-invalid]="Fname.invalid && Fname.touched" 
+           required class="form-control" [(ngModel)]="userModel.Fname" name="firstname">
+           <small [class.d-none]="Fname.valid || Fname.untouched" class="text-danger">Name is required</small>
           </div> 
 
           <div class="form-group">  
               <label>Last Name :</label> 
-                 <input type="text" #name="ngModel" [class.is-invalid]="name.invalid && name.touched" 
-                 required class="form-control" [(ngModel)]="userModel.name" name="lastname">
-                 <small [class.d-none]="name.valid || name.untouched" class="text-danger"> last Name is required</small>
+                 <input type="text" #Lname="ngModel" [class.is-invalid]="Lname.invalid && Lname.touched" 
+                 required class="form-control" [(ngModel)]="userModel.Lname" name="lastname">
+                 <small [class.d-none]="Lname.valid || Lname.untouched" class="text-danger"> last Name is required</small>
                 </div> 
 
           
@@ -25,24 +25,10 @@
       <div class="form-group">  
        <label>Email :</label> 
         <input type="email" #email="ngModel" [class.is-invalid]="email.invalid && email.touched" 
-        required class="form-control" [(ngModel)]="userModel.password" name="email">
+        required class="form-control" [(ngModel)]="userModel.email" name="email">
         <small [class.d-none]="email.valid || email.untouched" class="text-danger">Email is required</small>
-      </div> 
-
-
-          
-     <!-- <div class="form-group"> 
-              <label>Telephone :</label>
-               <input type="tel" [class.is-invalid]="phone.invalid && phone.touched" class="form-control" #phone="ngModel" pattern="^\d{10}$" 
-               required [class.is-invalid]="phone.invalid" [(ngModel)]="userModel.phone" name="Phone"> 
-               <div *ngIf="phone.errors && (phone.invalid || phone.touched)">
-                    <small class="text-danger" *ngIf="phone.errors.required">Phone number is required</small> 
-                     <small class="text-danger" *ngIf="phone.errors.pattern">Phone number must be 10 digits</small>  
-                    </div>
-                 </div> -->
-      
-                  
-                  <input type="submit" [disabled]="userForm.form.invalid" class="btn btn-primary" value="Submit Form">
+      </div>   
+                  <input type="submit" [disabled]="userForm.form.invalid" class="btn btn-primary" value="Sign up">
 
                   <div class="form-check mb-3">   
                        <input type="checkbox" class="form-check-input" [(ngModel)]="userModel.checktxt" name="check">   
@@ -50,31 +36,4 @@
                   </form>
                 
 </div> 
-<!--<div class="container">
-<form action="/action_page.php">
-  <div class="form-group">
-    <label >first name:</label>
-    <input type="text" class="form-control" placeholder="Enter first name" id="first">
-  </div>
-  <div class="form-group">
-    <label >last name:</label>
-    <input type="text" class="form-control" placeholder="Enter last name" id="last">
-  </div>
 
-  <div class="form-group">
-    <label >Email address:</label>
-    <input type="email" class="form-control" placeholder="Enter email" id="email">
-  </div>
-  <div class="form-group">
-    <label>Password:</label>
-    <input type="password" class="form-control" placeholder="Enter password" id="pwd">
-  </div>
-  <div class="form-group form-check">
-    <label class="form-check-label">
-      <input class="form-check-input" type="checkbox"> Remember me
-    </label>
-  </div>
-  <button type="submit" class="btn btn-primary">sign up</button>
-</form>
-
-</div>-->
