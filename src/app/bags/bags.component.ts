@@ -14,10 +14,15 @@ public bags=[];
     this.getproduct.getproduct().subscribe(data =>
       this.bags=data
     );
+
+    }
   }
+  
+   
+  
   // Wishlist(get){
   //   document.getElementById("mywishlist") 
    
   // }
   
-}
+

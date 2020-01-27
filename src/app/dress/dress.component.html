@@ -1,1 +1,20 @@
-<p>dress works!</p>
+<div class="container margindown" >
+    <div class="row" >
+     <div class="col-4" *ngFor="let dress of showdress">
+     <div class="card cardstyle" >
+            <div class="sameline"> <i class="far fa-heart"></i> </div>
+            <div class="center">
+            <img src="{{dress.img_url}}" >
+            <p>{{dress.name}}</p>
+           <p>{{dress.color}}</p>
+            <p> {{dress.price}} EGP</p>
+            </div>
+        <div class="card-body fontstyle">
+          
+        </div> 
+     
+             <div  class="fontstyle1 zoom1" routerLink="/dressDetail">show in detail</div>
+     
+     </div>
+     </div>
+    </div>
