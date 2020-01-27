@@ -17,16 +17,17 @@ import { TdfformComponent } from './nav/tdfform/tdfform.component';
 const routes: Routes = [
   {path:"",redirectTo:"/home",pathMatch:"full"},
   {path:"home",component:HomeComponent},
-  {path:"details" ,component:BagsComponent},
   {path:"wishlist",component:WishlistComponent},
   {path:"package",component:PackageComponent},
   {path:"bag",component:BagsCategoryComponent},
+  {path:"bag/:id",component:BagsCategoryComponent},
   {path:"makeup",component:MakeUpComponent},
   {path:"dress",component:DressComponent},
   {path:"bag-details",component:BagsComponent},
   {path:"login",component:TdfformComponent},
-  {path:"details" ,component:BagsComponent},
+ 
   {path:"Bags" ,component:BagsCategoryComponent},
+  {path:"signup" ,component:TdfsignupComponent},
   {path:"**",component:PageNotFoundComponent}
   
 

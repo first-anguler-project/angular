@@ -5,11 +5,11 @@ const cors=require("cors")
 const product=require("./controllers/product")
 const user =require("./controllers/user")
 const app=express();
-
-
-// app.use(badyparser.json());
-// app.use(cors());
-
+const joi =require('@hapi/joi')
+const flash =require("connect-flash")
+app.use(badyparser.json());
+app.use(cors());
+app.use(flash())
 
 app.get('/',function(req,res){
 
@@ -17,7 +17,7 @@ res.send("heloo");
 });
 
 app.use("/user",user)
-app.use("/get",product) 
+app.use("/bag",product) 
 
 
 
@@ -49,6 +49,6 @@ app.use(function(req,resp,next){
   });
 
 
-app.listen(4000,function(){
+app.listen(5000,function(){
     console.log("server is listenning ....")
 })

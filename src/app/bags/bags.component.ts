@@ -7,15 +7,17 @@ import { AllProductService } from 'src/services/all-product.service';
   styleUrls: ['./bags.component.css']
 })
 export class BagsComponent implements OnInit {
-public bags;
+public bags=[];
   constructor(private getproduct:AllProductService) { }
 
   ngOnInit() {
-    this.bags=this.getproduct.getproduct();
+    this.getproduct.getproduct().subscribe(data =>
+      this.bags=data
+    );
   }
-  Wishlist(get){
-    document.getElementById("mywishlist") 
+  // Wishlist(get){
+  //   document.getElementById("mywishlist") 
    
-  }
+  // }
   
 }
