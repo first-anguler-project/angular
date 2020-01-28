@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const router = express.Router();
 const bodyParser =require("body-parser")
 
+
 var parseUrlencoded= bodyParser.urlencoded({extended: true})
 
 router.get("/category",(req,res)=>{
@@ -10,19 +11,19 @@ router.get("/category",(req,res)=>{
     if(error){
                 console.log(error)
             }
-            console.log(result)
+            console.log("got all bag")
            
             res.json(result)
         })  
 });
 
 
-router.get("/details",(req,res)=>{
-    mongoose.model("bag").findById((error,data)=>{
+router.get("/details/:id",(req,res)=>{
+    mongoose.model("bag").findOne({_id: req.params.id},(error,data)=>{
         if(error){
             console.log(error)
         }
-        console.log(data)
+        // console.log(data)
         res.json(data)
     }) 
 })

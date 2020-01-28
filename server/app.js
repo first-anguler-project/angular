@@ -2,8 +2,10 @@ const express= require("express")
 const mongoose=require("mongoose")
 const badyparser=require("body-parser")
 const cors=require("cors")
+const session =require("express-session")
 const product=require("./controllers/product")
 const user =require("./controllers/user")
+const wishlist =require("./controllers/wishlist ")
 const app=express();
 const joi =require('@hapi/joi')
 const flash =require("connect-flash")
@@ -18,9 +20,14 @@ res.send("heloo");
 
 app.use("/user",user)
 app.use("/bag",product) 
+app.use("/product",wishlist)
 
 
-
+app.use(session({
+  secret:"shopping_?@!",
+  saveUninitialized:false,
+  resave:false
+}))
 
 const fs = require("fs")
 const multer=require("multer")

@@ -8,14 +8,14 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-4"  >
+        <div class="col-4" *ngFor="let product of bagdetails" >
         <!-- <img src="{{bag.mainimg}}"> -->
         </div>
         <div class="col-4">
             <br><br>
             <p>type</p>
-            <p>color</p>
-            <p>price</p>
+            <p>{{product.color}}</p>
+            <p>{{product.price}}</p>
             <input type="text" name="name" #name>
         </div>
         <div class="col-4"id="btn">

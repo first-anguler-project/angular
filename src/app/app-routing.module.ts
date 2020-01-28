@@ -22,14 +22,13 @@ const routes: Routes = [
   {path:"wishlist",component:WishlistComponent},
   {path:"package",component:PackageComponent},
   {path:"bag",component:BagsCategoryComponent},
-  {path:"bag/:id",component:BagsCategoryComponent},
+  {path:"bag/:_id",component:BagsComponent},
   {path:"makeup",component:MakeUpComponent},
   {path:"makeupDetail",component:MakeupDetailComponent},
   {path:"dress",component:DressComponent},
   {path:"dressDetail",component:DressDetailsComponent},
   {path:"bag-details",component:BagsComponent},
   {path:"login",component:TdfformComponent},
- 
   {path:"Bags" ,component:BagsCategoryComponent},
   {path:"signup" ,component:TdfsignupComponent},
   {path:"**",component:PageNotFoundComponent}
