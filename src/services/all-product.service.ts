@@ -7,9 +7,9 @@ import { Category } from "src/app/interfaces/Category";
   providedIn: 'root'
 })
 export class AllProductService {
-public url="http://localhost:5000/bag/category"
-public api_url1="http://localhost:5000/makeup/category"
-  public api_url = "http://localhost:5000/dress/category"
+public url="../../assets/bags.json"
+public api_url1="../../assets/makeup.json"
+  public api_url = "../../assets/dress.json"
   constructor(private http:HttpClient) { 
    
   }

@@ -16,16 +16,21 @@ router.get("/category",(req,res)=>{
         })  
 });
 
+router.get("/package/:_id",(req,res)=>{
+    console.log(req.params._id)
 
-router.get("/details",(req,res)=>{
-    mongoose.model("bag").findById((error,data)=>{
-        if(error){
-            console.log(error)
-        }
-        console.log(data)
-        res.json(data)
-    }) 
 })
+
+
+// router.get("/details",(req,res)=>{
+//     mongoose.model("bag").findById((error,data)=>{
+//         if(error){
+//             console.log(error)
+//         }
+//         console.log(data)
+//         res.json(data)
+//     }) 
+// })
 
 
 // route.post("/add",parseUrlencoded,(req,res)=>{
