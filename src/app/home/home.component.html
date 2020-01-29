@@ -3,6 +3,18 @@
 <head>home</head>
 
 <body>
+  <ul class="nav nav-pills justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" routerLink="/bag">BAG</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" routerLink="/dress">Dress</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" routerLink="/makeup">makeup</a>
+    </li>
+  </ul>
+  
     <div class="container">
         <div class="row">
             <div id="demo" class="carousel slide" data-ride="carousel">
@@ -47,21 +59,36 @@
 
         <div class="row catagores">
             <div class="col-4">
-                <a routerLink="/bag">
+                <a routerLink="/bag-details">
                     <img src="./assets/images/bag.jpg" class="img">
                 </a>
             </div>
             <div class="col-4">
-                <a routerLink="/makeup">
+                <a routerLink="/details">
                     <img src="../assets/images/makeup.jpg" class="img">
                 </a>
             </div>
             <div class="col-4">
-                <a routerLink="/dress">
+                <a routerLink="/details">
                     <img src="../assets/images/dresss.jpg" class="img">
                 </a>
             </div>
-
+            <div class="col-4">
+              <a routerLink="/details">
+                  <img src="../assets/images/makeup/M1.jpg" class="img">
+              </a>
+          </div>
+          <div class="col-4">
+            <a routerLink="/details">
+                <img src="../assets/images/dress/D1.jpg" class="img">
+            </a>
+        </div>
+         <div class="col-4">
+                <a routerLink="/bag-details">
+                    <img src="../assets/images/bag/B5.jpeg" class="img">
+                </a>
+            </div>
+          
         </div>
 
     </div>

@@ -1,21 +1,17 @@
 <nav class="header">
-
-      <h2>bags</h2>
-
+  <h2>bags</h2>
 </nav>
-
 <div class="container">
-
-      <div class="row">
-            <div class="col-4 " (click)="showdetails(bag._id)" *ngFor="let bag of bags">
+   <div class="row">
+            <div class="col-4 " *ngFor="let bag of bags">
                   <div class="card cardstyle cardstyle">
                         <div class="sameline">
                               <a href="/wishlist/{{bag._id}}/{{bag.name}}/{{bag.price}}" ><i class="far fa-heart"></i> </a></div>
 
                         <div class="card-body fontstyle"  >
                               <img src="{{bag.mainimg}}">
-
-                              <div  class="center">{{bag.name}}</div>
+ 
+                              <div (click)="showdetails(bag)" class="center">{{bag.name}}</div>
 
                         </div>
                         <h4 class="center">{{bag.price}}</h4>
@@ -35,7 +31,7 @@
       <br><br>
 </div>
 
-<!-- <div class="fontstyle1 zoom1" routerLink="/details">show in detail</div> -->
+<!-- <div class="fontstyle1 zoom1" routerLink="/bag-details">show in detail</div> -->
 
 
 

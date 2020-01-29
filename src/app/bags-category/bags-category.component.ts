@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class BagsCategoryComponent implements OnInit {
 public bags=[];
-public bagdetails=[];
+
   constructor(private getproduct:AllProductService,private router :Router) { }
 
   ngOnInit() {
@@ -20,7 +20,7 @@ public bagdetails=[];
   }
   showdetails(bag){
   //  this.getproduct.getbagdetails().subscribe(data => this.bagdetails=data)
-  this.router.navigate(["/bag",bag])
+  this.router.navigate(["/bag/:_id",bag])
    
   }
 

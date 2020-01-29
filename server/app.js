@@ -4,6 +4,9 @@ const badyparser=require("body-parser")
 const cors=require("cors")
 const session =require("express-session")
 const product=require("./controllers/product")
+const dress=require("./controllers/dress")
+const makeup=require("./controllers/makeup")
+
 const user =require("./controllers/user")
 const wishlist =require("./controllers/wishlist ")
 const app=express();
@@ -21,8 +24,10 @@ res.send("heloo");
 app.use("/user",user)
 app.use("/bag",product) 
 app.use("/product",wishlist)
+app.use("/dress",dress)
+app.use("/makeup",makeup)
 
-
+ 
 app.use(session({
   secret:"shopping_?@!",
   saveUninitialized:false,

@@ -10,8 +10,8 @@ import { BagsCategoryComponent } from 'src/app/bags-category/bags-category.compo
 export class AllProductService {
 public url="http://localhost:5000/bag/category";
 public url_bag_details ="http://localhost:5000/bag/details/" 
-public api_url1="../../assets/makeup.json"
-  public api_url = "../../assets/dress.json"
+public api_url1="http://localhost:5000/makeup/category"
+  public api_url = "http://localhost:5000/dress/category"
   constructor(private http:HttpClient) { 
    
   }

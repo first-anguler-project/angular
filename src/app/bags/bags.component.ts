@@ -8,8 +8,8 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
   styleUrls: ['./bags.component.css']
 })
 export class BagsComponent implements OnInit {
-public bagdetails=[];
-public bagid;
+public bagdetails;
+public bagid={};
   constructor(private getproduct:AllProductService, private activeroute:ActivatedRoute) { }
 
   ngOnInit() {

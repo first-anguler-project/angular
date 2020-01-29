@@ -8,16 +8,17 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-4" *ngFor="let product of bagdetails" >
-        <!-- <img src="{{bag.mainimg}}"> -->
+        <div class="col-4"  >
+         <img src="{{bagdetails.mainimg}}"> 
         </div>
         <div class="col-4">
             <br><br>
-            <p>type</p>
-            <p>{{product.color}}</p>
-            <p>{{product.price}}</p>
-            <input type="text" name="name" #name>
+            
+            <p>{{bagdetails.color}}</p>
+            <p>{{bagdetails.price}}</p>
+           
         </div>
+        
         <div class="col-4"id="btn">
             <input type="submit" value=" Add To Wishlist" class="btn btn-light inputstyle" (click)="Wishlist(name.value)">
             <br><br>
@@ -26,9 +27,10 @@
         </div>
     
     <div class="row divmargin">
-        <img src="assets\images\bag1.jpg" class="small">
-        <img src="assets\images\bag1.jpg" class="small">
-        <img src="assets\images\bag1.jpg" class="small">
+        <img src="{{bagdetails.img1}}" class="small">
+        <img src="{{bagdetails.img2}}" class="small">
+        <img src="{{bagdetails.img3}}" class="small">
+        <img src="{{bagdetails.img4}}" class="small">
     </div>
     
 </div>
