@@ -1,0 +1,53 @@
+[
+    {
+        "_id":"1",
+        "name":"Creamy Powder Foundation with Minerals",
+        "price":24,
+       
+        "img_url":"https://www.lorealparisusa.com/~/media/images/lop/home/products/makeup/face/powder/age-perfect-makeup-creamy-powder-foundation-with-minerals/300-ivory/loreal-paris-age-perfect-makeup-creamy-powder-foundation-ivory-300-primary-071249408841.jpg?thn=0",
+        "img_url1":"https://www.lorealparisusa.com/~/media/images/lop/home/products/makeup/face/powder/age-perfect-makeup-creamy-powder-foundation-with-minerals/300-ivory/loreal-paris-age-perfect-makeup-creamy-powder-foundation-ivory-300-open-071249408841-av11.jpg"
+    },
+    {
+        "_id":"2",
+        "name":"Crushed Foils Metallic Highlighter",
+        
+        "price":12.99,
+        "img_url":"https://www.lorealparisusa.com/~/media/images/lop/home/products/makeup/face/highlighters/infallible-crushed-foils-metallic-highlighter/cos90a_1-closed.jpg?thn=0",
+        "img_url1":"https://www.lorealparisusa.com/~/media/images/lop/home/products/makeup/face/highlighters/infallible-crushed-foils-metallic-highlighter/cos90a_1-open.jpg"  
+    },
+    {
+        "_id":"3",
+        "name":"Full Wear Concealer Waterproof, Full Coverage",
+      
+        "price":12.99,
+       
+       
+        "img_url":"https://www.lorealparisusa.com/~/media/images/lop/home/products/makeup/face/concealer/infallible-full-wear-concealer-waterproof-full-coverage/lop-cosmetics-infallible-full-wear-concealer-porcelain-320-primary-071249382394.jpg?thn=0" ,
+        "img_url1":"https://www.lorealparisusa.com/~/media/images/lop/home/products/makeup/face/concealer/infallible-full-wear-concealer-waterproof-full-coverage/lop-cosmetics-infallible-full-wear-concealer-porcelain-320-open-071249382394.jpg" 
+    },
+    {
+        "_id":"4",
+        "name":"Longwear Foundation Shaping Sticks",
+       
+        "price":13,
+        "img_url":"https://www.lorealparisusa.com/~/media/images/lop/home/products/makeup/face/foundation/infallible-longwear-shaping-foundation-makeup-sticks/cos85a_10-open.jpg?thn=0" ,
+        "img_url1":"https://www.lorealparisusa.com/~/media/images/lop/home/products/makeup/face/foundation/infallible-longwear-shaping-foundation-makeup-sticks/cos85a_10-open-2.jpg" 
+    },
+    {
+        "_id":"5",
+        "name":"Glotion Natural Glow Enhancer",
+       
+        "price":15,
+        "img_url":"https://www.lorealparisusa.com/~/media/images/lop/home/products/makeup/face/highlighters/true-match-lumi-glotion-natural-glow-enhancer/cos60a_1-primary.jpg?thn=0" ,
+        "img_url1":"https://www.lorealparisusa.com/~/media/images/lop/home/products/makeup/face/highlighters/true-match-lumi-glotion-natural-glow-enhancer/cos60a_1-open.jpg" 
+    },
+    {
+        "_id":"6",
+        "name":"Waterproof Mascara, Lasting Volume",
+      
+        "price":20,
+       
+       
+        "img_url":"https://www.lorealparisusa.com/~/media/images/lop/home/products/makeup/eyes/mascara-primer/bambi-eye-waterproof-mascara-lasting-volume/loreal-cosmetics-bambi-waterproof-mascara-406-black-071249404362-primary.jpg?thn=0" ,
+        "img_url1":"https://www.lorealparisusa.com/~/media/images/lop/home/products/makeup/eyes/mascara-primer/bambi-eye-waterproof-mascara-lasting-volume/blackest-black/loreal-cosmetics-bambi-waterproof-mascara-405-blackest-black-open-071249404355-av11.jpg" 
+    }]

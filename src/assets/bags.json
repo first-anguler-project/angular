@@ -1,0 +1,65 @@
+[
+{ 
+    "_id" : NumberInt(2), 
+    "name" : "SALLY ANTAR DESIGNS", 
+    "color" : "black", 
+    "price" : NumberInt(300), 
+    "material" : "Genuine black leather with imported silver skulls"
+},
+{ 
+    "_id" : "1", 
+    "name" : "KEIKŌ", 
+    "color" : "Camel Backpack", 
+    "price" : NumberInt(550), 
+    "size" : [
+        {
+            "width" : NumberInt(29), 
+            "hight" : NumberInt(32), 
+            "depth" : 11.5
+        }
+    ], 
+    "material" : " Leather"
+},
+{ 
+    "_id" : "3", 
+    "img" : "B30.jpeg", 
+    "name" : "ALIEL", 
+    "color" : "blue", 
+    "price" : NumberInt(500), 
+    "size" : [
+        {
+            "hight" : NumberInt(11), 
+            "width" : NumberInt(15), 
+            "Depth" : 6.5
+        }
+    ], 
+    "material" : "Faux leather/pure agate stone"
+},
+{ 
+    "_id" : NumberInt(4), 
+    "name" : "NOTCH", 
+    "color" : "black", 
+    "price" : NumberInt(700), 
+    "material" : "Genuine leather"
+},
+{ 
+    "_id" : NumberInt(5), 
+    "name" : "ALIEL", 
+    "price" : NumberInt(800), 
+    "color" : "Burgundy Eclipse", 
+    "material" : "Vegad suede leather"
+},
+{ 
+    "_id" : NumberInt(6), 
+    "name" : "KEIKŌ", 
+    "price" : NumberInt(500), 
+    "color" : "Blushing Serpenti Backpack", 
+    "size" : [
+        {
+            "hight" : NumberInt(30), 
+            "width" : NumberInt(24), 
+            "depth" : 12.5
+        }
+    ]
+}
+]

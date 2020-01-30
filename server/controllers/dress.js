@@ -14,4 +14,14 @@ router.get("/category",(req,res)=>{
         })  
 });
 
+router.get("/details/:id",(req,res)=>{
+    mongoose.model("cloth").findOne({_id: req.params.id},(error,data)=>{
+        if(error){
+            console.log(error)
+        }
+        // console.log(data)
+        res.json(data)
+    }) 
+})
+
 module.exports=router

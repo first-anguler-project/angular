@@ -23,7 +23,9 @@ padding-top: 40px;
     border: 2px outset lightgray;
 }
 .divmargin{
-    margin-left: 100px;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-right: 20px;
 }
 .small{
     width: 80px;

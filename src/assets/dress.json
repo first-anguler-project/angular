@@ -1,0 +1,63 @@
+[
+{
+    "_id":"1",
+    "name":"KASHMIRA BY NINI",
+    "color":"Black",
+    "price":800,
+   
+    "material":"silk",
+    "img_url":"https://www.mitcha.com/content/images/thumbs/0003826_black-beach-dress.jpg",
+    "img_url1":"https://www.mitcha.com/content/images/thumbs/0003979_blue-beach-dress.jpg"
+},
+{
+    "_id":"2",
+    "name":"NARY AREF",
+    "color":"Burgundy ",
+    "price":6500,
+   
+    "material":"brocade",
+    "img_url":"https://www.mitcha.com/content/images/thumbs/0008885_burgundy-brocade-dress.jpeg" ,
+    "img_url1":"https://www.mitcha.com/content/images/thumbs/0009175_burgundy-brocade-dress.jpeg" 
+},
+{
+    "_id":"3",
+    "name":"NARY AREF",
+    "color":"Blue",
+    "price":4200,
+   
+    "material":"Velvet",
+    "img_url":"https://www.mitcha.com/content/images/thumbs/0008874_blue-velvet-dress.jpeg",
+    "img_url1":"https://www.mitcha.com/content/images/thumbs/0009003_blue-velvet-dress.jpeg"  
+},
+{
+    "_id":"4",
+    "name":"BARDEES",
+    "color":"Colorfull ",
+    "price":4446,
+   
+    "material":"Pure Silk",
+    "img_url":"https://www.mitcha.com/content/images/thumbs/0002095_chinese-dress.jpg"  ,
+    "img_url1":"https://www.mitcha.com/content/images/thumbs/0002097_chinese-dress.jpg" 
+},
+{
+    "_id":"5",
+    "name":"RECESSES",
+    "color":"Mint",
+    "price":850,
+   
+    "material":"Cotton",
+    "img_url":"https://www.mitcha.com/content/images/thumbs/0006553_mint-wrap-dress-with-ruffles.jpeg" ,
+    "img_url1":"https://www.mitcha.com/content/images/thumbs/0006551_red-wrap-dress-with-ruffles.jpeg",
+    "img_url2":"https://www.mitcha.com/content/images/thumbs/0006711_mint-wrap-dress-with-ruffles.jpeg"
+   
+},
+{
+    "_id":"6",
+    "name":"SAQHOUTE",
+    "color":"black ",
+    "price":4060,
+   
+    "material":"Crepe and Satin Lining",
+    "img_url":"https://www.mitcha.com/content/images/thumbs/0004327_lotus-black-embroidered-dress.jpg" ,
+    "img_url2":"https://www.mitcha.com/content/images/thumbs/0004328_lotus-black-embroidered-dress.jpg" 
+}]
