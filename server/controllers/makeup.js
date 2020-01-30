@@ -4,7 +4,7 @@ const router = express.Router();
 
 
 router.get("/category",(req,res)=>{
-    mongoose.model("makeup").find((error,result)=>{
+ mongoose.model("makeup").find((error,result)=>{
     if(error){
                 console.log(error)
             }
@@ -14,4 +14,13 @@ router.get("/category",(req,res)=>{
         })  
 });
 
+router.get("/details/:id",(req,res)=>{
+    mongoose.model("makeup").findOne({_id: req.params.id},(error,data)=>{
+        if(error){
+            console.log(error)
+        }
+        // console.log(data)
+        res.json(data)
+    }) 
+})
 module.exports=router

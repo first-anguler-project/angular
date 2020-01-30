@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AllProductService } from 'src/services/all-product.service';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-bags',
@@ -7,14 +8,18 @@ import { AllProductService } from 'src/services/all-product.service';
   styleUrls: ['./bags.component.css']
 })
 export class BagsComponent implements OnInit {
-public bags=[];
-  constructor(private getproduct:AllProductService) { }
+public bagdetails;
+public bagid={};
+  constructor(private getproduct:AllProductService, private activeroute:ActivatedRoute) { }
 
   ngOnInit() {
-    this.getproduct.getproduct().subscribe(data =>
-      this.bags=data
-    );
-
+    this.activeroute.paramMap.subscribe((param:ParamMap)=>{
+      this.bagid=param.get("_id")
+    })
+     this.getproduct.getbagdetails(this.bagid).subscribe(data => this.bagdetails=data 
+     
+      )
+      console.log(this.bagdetails)
     }
   }
   

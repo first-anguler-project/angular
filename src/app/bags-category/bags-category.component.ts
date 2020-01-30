@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AllProductService } from 'src/services/all-product.service';
 import { Router } from '@angular/router';
-import { GetBagsProductsService } from "src/services/get-bags-products.service";
+
 
 @Component({
   selector: 'app-bags-category',
@@ -10,6 +10,7 @@ import { GetBagsProductsService } from "src/services/get-bags-products.service";
 })
 export class BagsCategoryComponent implements OnInit {
 public bags=[];
+
   constructor(private getproduct:AllProductService,private router :Router) { }
 
   ngOnInit() {
@@ -17,8 +18,9 @@ public bags=[];
       this.bags=data
     );
   }
-  showdetails(detail){
-this.router.navigate(["/details",detail.id])
+  showdetails(bag){
+  //  this.getproduct.getbagdetails().subscribe(data => this.bagdetails=data)
+  this.router.navigate(["/bag/:_id",bag])
    
   }
 

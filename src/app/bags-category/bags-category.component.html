@@ -5,9 +5,10 @@
    <div class="row">
             <div class="col-4 " *ngFor="let bag of bags">
                   <div class="card cardstyle cardstyle">
-                        <div class="sameline"> <i class="far fa-heart"></i> </div>
+                        <div class="sameline">
+                              <a href="/wishlist/{{bag._id}}/{{bag.name}}/{{bag.price}}" ><i class="far fa-heart"></i> </a></div>
 
-                        <div class="card-body fontstyle">
+                        <div class="card-body fontstyle"  >
                               <img src="{{bag.mainimg}}">
  
                               <div (click)="showdetails(bag)" class="center">{{bag.name}}</div>
@@ -30,7 +31,7 @@
       <br><br>
 </div>
 
-<div class="fontstyle1 zoom1" routerLink="/bag-details">show in detail</div>
+<!-- <div class="fontstyle1 zoom1" routerLink="/bag-details">show in detail</div> -->
 
 
 
