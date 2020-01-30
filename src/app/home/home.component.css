@@ -12,6 +12,7 @@ body
 }
  .img
 {
+
     width: 360px;
     height: 420px;
     border: 1px outset rgb(250, 247, 247);
@@ -26,7 +27,7 @@ body
 .center{
     text-align: center;
 }
- img{
+a img{
      width: 190px;
      display: block;
      margin-left: auto;
