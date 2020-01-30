@@ -27,22 +27,18 @@
                   <div class="carousel-item active">
                     <img src="../assets/images/21.jpg" alt="Los Angeles" width="1100" height="500">
                     <div class="carousel-caption">
-                      <h3>Los Angeles</h3>
-                      <p>We had such a great time in LA!</p>
                     </div>   
                   </div>
                   <div class="carousel-item">
-                    <img src="../assets/images/21.jpg" alt="Chicago" width="1100" height="500">
+                    <img src="../assets/images/8298b473c59ef8e00b337a5c4bf33a02d289b599-160318141811.jpg" alt="Chicago" width="1100" height="500">
                     <div class="carousel-caption">
-                      <h3>Chicago</h3>
-                      <p>Thank you, Chicago!</p>
+                      
                     </div>   
                   </div>
                   <div class="carousel-item">
-                    <img src="../assets/images/21.jpg" alt="New York" width="1100" height="500">
+                    <img src="../assets/images/gril.jpg" alt="New York" width="1100" height="500">
                     <div class="carousel-caption">
-                      <h3>New York</h3>
-                      <p>We love the Big Apple!</p>
+                     
                     </div>   
                   </div>
                 </div>
@@ -57,13 +53,31 @@
     </div>
     
 
-        <div class="row catagores">
+        <!-- <div class="row catagores"  *ngFor="let bag of s">
             <div class="col-4">
                 <a routerLink="/bag-details">
-                    <img src="./assets/images/bag.jpg" class="img">
-                </a>
+                    <img src="{{bag.name}}" class="img">
+              
+
             </div>
-            <div class="col-4">
+            <div class="row catagores" *ngFor="let bag of bags" *ngFor="let dress of showdress">
+              <div class="col-4">
+                  <a routerLink="/bag-details">
+                      <img src="{{bag.name}}" class="img">
+                  </a>
+                  <a routerLink="/dress-details">
+                    <img src="{{dress.img_url}}" class="img">
+                </a> 
+  
+              </div>
+              <div class="row catagores" *ngFor="let dress of showdress">
+                <div class="col-4">
+                    <a routerLink="/dress-details">
+                      <img src="{{dress.img_url}}" class="img">
+                  </a>
+    
+                </div>
+             <div class="col-4"> 
                 <a routerLink="/details">
                     <img src="../assets/images/makeup.jpg" class="img">
                 </a>
@@ -89,9 +103,77 @@
                 </a>
             </div>
           
+        </div> -->
+        <div class="row" >
+          <div class="col-4" *ngFor="let make of showMakeup">
+          <div class="card cardstyle" >
+                 <div class="sameline"> <i class="far fa-heart"></i> </div>
+                 <div class="center">
+                 <img src="{{make.img_url}}" >
+                 <p>{{make.name}}</p>
+               
+                 <p> {{make.price}} EGP</p>
+                 </div>
+             <div class="card-body fontstyle">
+               
+             </div> 
+          
+                  <div  class="fontstyle1 zoom1" routerLink="/makeupDetail">show in detail</div>
+          
+          </div>
+          </div>
+        </div>       
+        <br>
+        <div class="row" >
+          <div class="col-4" *ngFor="let dress of showdress">
+          <div class="card cardstyle" >
+                 <div class="sameline"> <i class="far fa-heart"></i> </div>
+                 <div class="center">
+                 <img src="{{dress.img_url}}" >
+                 <p>{{dress.name}}</p>
+                <p>{{dress.color}}</p>
+                 <p> {{dress.price}} EGP</p>
+                 </div>
+             <div class="card-body fontstyle">
+               
+             </div> 
+          
+                  <div  class="fontstyle1 zoom1" routerLink="/dressDetail">show in detail</div>
+          
+          </div>
+          </div>
         </div>
+<br>
+        <div class="row">
+          <div class="col-4 " *ngFor="let bag of bags">
+                <div class="card cardstyle cardstyle">
+                      <div class="sameline"> <i class="far fa-heart"></i> </div>
+
+                      <div class="card-body fontstyle">
+                            <img src="{{bag.mainimg}}">
+
+                            <div (click)="showdetails(bag)" class="center">{{bag.name}}</div>
+
+                      </div>
+                      <h4 class="center">{{bag.price}}</h4>
+
+
+                </div>
+          </div>
+        </div>
+  
+         
+
+
+
+
+
+
 
     </div>
+
+   
+
 </body>
 
 </html>
